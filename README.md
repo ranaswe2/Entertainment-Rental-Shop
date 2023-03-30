@@ -1,0 +1,39 @@
+# Entertainment-Rental-Shop
+
+The system being developed, will be used for a rental store that allows
+employees to loan out items. These loaned items will then be returned to the
+store after use by the public, and they can be tracked to see overdue fees and
+who currently has the item.
+This system will have a fully functional GUI that’ll allow for search capabilities
+(to see item availability and details) and a login page that the user will have to
+pass before entering the system, this will also be used by employees of the store
+(not the public) that can register other users, but only the admin can approve
+this, the admin can also reset passwords, unlock accounts and delete users.
+Furthermore, the system will allow for different items (books, DVDs, CDs, and
+Audiobooks) to be catalogued within the database. In addition to these, each
+item will have different options (for example, CDs will have their genre).
+Other features of the system will include a monthly report that'll show the user
+the most popular item, the number of times each item has been loaned and
+returned, and the total of items that have been landed and returned.
+The system must include the following features:
+● Loan and return items, Tracking details of who has it.
+● Users can reserve items before loaning.
+● Fine for overdue items with details
+● Charge for losing or missing an item.
+● Ability to select multiple types of items to be loaned at once.
+● More than one option for each of the items (for example, each item has a
+genre associated with it, if loaning a DVD it might be a horror film)
+● Shows item availability when loaning and the quantity.
+● Option to print details about a single item onto a file that includes; item
+details, number of copies on loan and available, and the earliest return
+date
+● Search facility and inventory checking
+● Login system with different users (standard and admin), with the ability
+to register new users with admin approval.
+● Option to log off once user us finished
+● Cataloguing ability to register new items, update items and delete items,
+within the shops database
+● Monthly report page that will check most popular item, number of times
+each item has been loaned and returned, and total of items that have been
+landed and returned
+

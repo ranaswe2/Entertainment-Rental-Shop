@@ -102,7 +102,7 @@ After trying 3 times with a wrong password, account is blocked  </br>
 ![ERS](/images/user_logout.png "ERS") </br>
 
 
-## User Panel
+## Admin Panel
 
 #### Login
 
@@ -151,7 +151,7 @@ Click the New Product button for check the update list
 
 * Update user and admin password </br>
 * Delete unusual user account </br>
-![ERS](/images/admin_product1.png "ERS") </br>
+![ERS](/images/admin_manageuser.png "ERS") </br>
 
 
 

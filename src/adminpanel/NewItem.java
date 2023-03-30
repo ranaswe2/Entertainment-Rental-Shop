@@ -6,6 +6,8 @@ import java.awt.*;
 import database.MySQL;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import javax.swing.*;
@@ -15,20 +17,75 @@ public class NewItem extends Admin{
         super.topBanner("New Item");
 
 
-        JTextField itemName= new JTextField();
-        super.inputDecorator(itemName,"Item Name",300);
+        JTextField itemNameField= new JTextField();
+        super.inputDecorator(itemNameField,"Item Name",300);
+        itemNameField.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='A' && ch <='Z' || ch >='a' && ch <='z'  ||(ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only alphabets.");
+                   
+                }
+             
+            }
+        });
+        
+        
 
-        JTextField itemPrice= new JTextField();
-        super.inputDecorator(itemPrice,"Fare /Day (£)",400);
+        JTextField itemPriceField= new JTextField();
+        super.inputDecorator(itemPriceField,"Fare /Day (£)",400);
+        itemPriceField.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='0' && ch <='9' || (ch==KeyEvent.VK_PERIOD) ||(ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only numbers.");
+                   
+                }
+             
+            }
+        });
 
-        JTextField itemLateFee= new JTextField();
-        super.inputDecorator(itemLateFee,"Late Fee /Day (£)",500);
+        JTextField itemLateFeeField= new JTextField();
+        super.inputDecorator(itemLateFeeField,"Late Fee /Day (£)",500);
+        itemLateFeeField.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='0' && ch <='9' || (ch==KeyEvent.VK_PERIOD) ||(ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only numbers.");
+                   
+                }
+             
+            }
+        });
 
-        JTextField itemMissing= new JTextField();
-        super.inputDecorator(itemMissing,"Missing Cost (£)",600);
-
-        JTextField itemMissingFee= new JTextField();
-        super.inputDecorator(itemMissingFee,"Missing Cost (£)",600);
+        JTextField itemMissingFeeField= new JTextField();
+        super.inputDecorator(itemMissingFeeField,"Missing Cost (£)",600);
+        itemMissingFeeField.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='0' && ch <='9' || (ch==KeyEvent.VK_PERIOD) ||(ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only numbers.");
+                   
+                }
+             
+            }
+        });
 
         JButton addItemButton= new JButton("Add Item");
         super.buttonStructure(addItemButton,800,700,300,50);
@@ -36,10 +93,10 @@ public class NewItem extends Admin{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         
-                        String item= itemName.getText().trim();
-                        double fare= Double.parseDouble(itemPrice.getText().trim());
-                        double lateFee= Double.parseDouble(itemLateFee.getText().trim());
-                        double missingFee= Double.parseDouble(itemMissingFee.getText().trim());
+                        String item= itemNameField.getText().trim();
+                        double fare= Double.parseDouble(itemPriceField.getText().trim());
+                        double lateFee= Double.parseDouble(itemLateFeeField.getText().trim());
+                        double missingFee= Double.parseDouble(itemMissingFeeField.getText().trim());
                         
                         try {
                             PreparedStatement pstmt = MySQL.connection.prepareStatement("INSERT INTO item (item_name, fare_fee, late_fee, lost_fee) VALUES (?, ?, ?, ?)");
@@ -51,10 +108,10 @@ public class NewItem extends Admin{
                             int rowAffected= pstmt.executeUpdate();
                             if(rowAffected>0){
                                JOptionPane.showMessageDialog(null,"Item is added!");
-                               itemName.setText("");
-                               itemPrice.setText("");
-                               itemLateFee.setText("");
-                               itemMissingFee.setText("");
+                               itemNameField.setText("");
+                               itemPriceField.setText("");
+                               itemLateFeeField.setText("");
+                               itemMissingFeeField.setText("");
                             }
                             
                             pstmt.close();

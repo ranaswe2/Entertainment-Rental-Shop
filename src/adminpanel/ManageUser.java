@@ -42,14 +42,6 @@ public class ManageUser extends Admin{
         item.setFont(new Font("tahoma", Font.BOLD, 30));
         panel.add(item);
 
-
-        JTextField itemName= new JTextField();
-        super.inputDecorator(itemName,"User ID",400);
-
-        JTextField itemPrice= new JTextField();
-        super.inputDecorator(itemPrice,"New Password",500);
-
-
         JTextField idField= new JTextField();
         super.inputDecorator(idField,"User ID",400);
 
@@ -99,24 +91,6 @@ public class ManageUser extends Admin{
         panel.add(danger);
 
 
-        JLabel selectItem= new JLabel("User ID");
-        selectItem.setBounds(1250,400,300,30);
-        selectItem.setFont(new Font("verdana", Font.BOLD, 30));
-        selectItem.setForeground(Color.WHITE);
-        panel.add(selectItem);
-
-        JTextField itemToDelete= new JTextField();
-        itemToDelete.setBounds(1550,400,300,50);
-        itemToDelete.setFont(new Font("tahoma", Font.BOLD, 30));
-        panel.add(itemToDelete);
-
-
-        JButton lockAccount= new JButton("Delete Account");
-        lockAccount.setBackground(Color.RED);
-        lockAccount.setBounds(1550,500,300,50);
-        lockAccount.setFont(new Font("tahoma", Font.BOLD, 30));
-        panel.add(lockAccount);
-        
         JLabel idLabel= new JLabel("User ID");
         idLabel.setBounds(1250,400,300,30);
         idLabel.setFont(new Font("verdana", Font.BOLD, 30));

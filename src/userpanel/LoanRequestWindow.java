@@ -8,12 +8,14 @@ import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import javax.swing.*;
 import java.sql.SQLException;
 import login.UserLogin;
 
 
-public class LoanActivationWindow{
+public class LoanRequestWindow{
 
     private JLabel topBanner,usernameLabel;
     private JFrame frame;
@@ -27,7 +29,7 @@ public class LoanActivationWindow{
 
 
 
-    public LoanActivationWindow(String itemName, int productCode) {
+    public LoanRequestWindow(String itemName, int productCode) {
         
         frame= new JFrame("Entertainment Rental Shop");
         container= frame.getContentPane();
@@ -41,6 +43,20 @@ public class LoanActivationWindow{
         usernameLabel= new JLabel();
 
         dayField = new JTextField(24);
+        dayField.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='0' && ch <='9' || (ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only numbers.");
+                   
+                }
+             
+            }
+        });
 
         requestButton = new JButton("Loan Request");
         requestButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));

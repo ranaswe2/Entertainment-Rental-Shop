@@ -114,6 +114,8 @@ public class Loan {
                             
                             pstmtINSERT.close();
                             
+                             Reserve reserve= new Reserve(userID,productCode);
+                             reserve.removeFromCart();
                             }  
                             else{
                                 JOptionPane.showMessageDialog(null, "Sorry!\nThis product is not available right now.\nPlease, wait some days.");

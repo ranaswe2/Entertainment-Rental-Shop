@@ -87,7 +87,11 @@ public class User extends JFrame {
         this.buttonBorder(buttonLoanedItem);
         buttonLoanedItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new LoanedItem();
+                try {
+                    new LoanedItem();
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
                 dispose();
             }
         });

@@ -9,6 +9,8 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
@@ -101,7 +103,20 @@ public class SignupWindow implements ActionListener {
         nameTextField.setEditable(true);
         nameTextField.setBounds(300, 375, 200,  40);
         nameTextField.setFont(new Font("Serif", Font.PLAIN, 18));
-
+        nameTextField.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='a' && ch <='z' || ch >='A' && ch <='Z'  ||(ch==KeyEvent.VK_BACK_SPACE) ||(ch==KeyEvent.VK_SPACE) || (ch==KeyEvent.VK_PERIOD)|| (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter correct input.");
+                   
+                }
+             
+            }
+        });
 
         usernameLabel= new JLabel();
         usernameLabel.setText("Username *");
@@ -114,7 +129,20 @@ public class SignupWindow implements ActionListener {
         usernameTextField.setEditable(true);
         usernameTextField.setBounds(300, 450, 200,  40);
         usernameTextField.setFont(new Font("Serif", Font.PLAIN, 18));
-
+        usernameTextField.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='a' && ch <='z' || ch >='1' && ch <='9'  ||(ch==KeyEvent.VK_BACK_SPACE) ||(ch==KeyEvent.VK_AT) || (ch==KeyEvent.VK_PERIOD)|| (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only a-z, 1-9, '.'");
+                   
+                }
+             
+            }
+        });
 
         passwordLabel= new JLabel();
         passwordLabel.setText("Password");
@@ -163,7 +191,7 @@ public class SignupWindow implements ActionListener {
 
 
         instruction= new JLabel();
-        instruction.setText("* Username should be a unique single text like email, phone number or else");
+        instruction.setText("* Username should be a unique single text like phone number or else");
         instruction.setBounds(75, 775, 500,  40);
         instruction.setForeground(Color.WHITE);
 

@@ -3,6 +3,7 @@ package userpanel;
 
 import database.Item;
 import database.MySQL;
+import database.Reserve;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,12 +11,16 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import login.UserLogin;
 
 public class Search extends User{
     public Search() throws SQLException {
 
         Item list= new Item();
         String itemList[] = list.getItemList();
+        UserLogin login= new UserLogin();
 
 /************************** Search ************************************/
 
@@ -143,14 +148,23 @@ public class Search extends User{
                      buttonLoan .addActionListener(new ActionListener() {
                          @Override
                          public void actionPerformed(ActionEvent e) {
-                             new LoanActivationWindow(item_name, product_code);
+                             new LoanRequestWindow(item_name, product_code);
                          }
                      });
                      
                      buttonCart .addActionListener(new ActionListener() {
                          @Override
                          public void actionPerformed(ActionEvent e) {
-                             JOptionPane.showMessageDialog(null,"This is Cart ");
+                             try {
+                                 
+                             Reserve reserve= new Reserve(login.getId(),product_code);
+                             reserve.addToCart();
+                              
+                             JOptionPane.showMessageDialog(null,"Product is added to the Cart.");
+                             
+                             } catch (SQLException ex) {
+                                 ex.printStackTrace();
+                             }
                          }
                      });
                      

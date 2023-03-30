@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.sql.SQLException;
 
 public class AdminLoginWindow implements ActionListener {
@@ -68,6 +70,20 @@ public class AdminLoginWindow implements ActionListener {
         usernameTextField.setEditable(true);
         usernameTextField.setBounds(300, 200, 200,  40);
         usernameTextField.setFont(new Font("Serif", Font.PLAIN, 18));
+        usernameTextField.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='a' && ch <='z' || ch >='1' && ch <='9'  ||(ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_PERIOD)|| (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only a-z, 1-9, '.' ");
+                   
+                }
+             
+            }
+        });
 
         passwordTextField.setText("");
         passwordTextField.setEditable(true);

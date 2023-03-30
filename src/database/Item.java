@@ -13,10 +13,15 @@ public class Item {
     
     
     public void delete(String item) throws SQLException{
-        PreparedStatement pstmt = MySQL.connection.prepareStatement("DELETE FROM item WHERE  item_name= ?");
-                      pstmt.setString(1, item);   
-                      pstmt.executeUpdate();
-                      pstmt.close();
+        PreparedStatement pstmtItem = MySQL.connection.prepareStatement("DELETE FROM item WHERE item_name= ?");
+                      pstmtItem.setString(1, item);   
+                      pstmtItem.executeUpdate();
+                      pstmtItem.close();
+                      
+        PreparedStatement pstmtProduct = MySQL.connection.prepareStatement("DELETE FROM product WHERE item_name= ?");
+                      pstmtProduct.setString(1, item);   
+                      pstmtProduct.executeUpdate();
+                      pstmtProduct.close();
     }
     
     
@@ -57,4 +62,7 @@ public class Item {
 
         return itemList;         // Make the Item list to a String array and return it
     }
+    
+    
+    
 }

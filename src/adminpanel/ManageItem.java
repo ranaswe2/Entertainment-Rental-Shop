@@ -6,12 +6,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.geom.Line2D;
-import java.awt.geom.Rectangle2D;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class ManageItem extends Admin{
     public ManageItem() throws SQLException {
@@ -36,12 +34,54 @@ public class ManageItem extends Admin{
 
         JTextField itemPrice= new JTextField();
         super.inputDecorator(itemPrice,"Fare /Day (£)",400);
+        itemPrice.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='0' && ch <='9' || (ch==KeyEvent.VK_PERIOD) ||(ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only numbers.");
+                   
+                }
+             
+            }
+        });
 
         JTextField itemLateFee= new JTextField();
         super.inputDecorator(itemLateFee,"Late Fee /Day (£)",500);
+        itemLateFee.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='0' && ch <='9' || (ch==KeyEvent.VK_PERIOD) ||(ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only numbers.");
+                   
+                }
+             
+            }
+        });
 
         JTextField itemMissing= new JTextField();
         super.inputDecorator(itemMissing,"Missing Cost (£)",600);
+        itemMissing.addKeyListener(new KeyAdapter(){
+            
+            public void keyTyped(KeyEvent e){
+                 
+                char ch= e.getKeyChar();
+               
+                if(!(ch >='0' && ch <='9' || (ch==KeyEvent.VK_PERIOD) ||(ch==KeyEvent.VK_BACK_SPACE) || (ch==KeyEvent.VK_DELETE))){
+                     e.consume();
+                    JOptionPane.showMessageDialog(null, " Enter only numbers.");
+                   
+                }
+             
+            }
+        });
 
         JButton updateItemButton= new JButton("Update Item");
         super.buttonStructure(updateItemButton,800,700,300,50);

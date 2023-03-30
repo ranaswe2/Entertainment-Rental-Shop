@@ -65,13 +65,47 @@ After clicking the Sign Up button, server check your information. If all are cor
 Try to log in before approving the user account</br>
 ![ERS](/images/user_login1.png "ERS") </br>
 
-Try to log in by an incorrect password </br>
+Try to log in with an incorrect password </br>
 
 
 ![ERS](/images/user_login2.png "ERS") </br>
 ![ERS](/images/user_login3.png "ERS") </br>
 ![ERS](/images/user_login4.png "ERS") </br>
+After trying 3 times with a wrong password, account is blocked  </br>
 ![ERS](/images/user_login5.png "ERS") </br>
+
+#### Home
+
+![ERS](/images/user_home.png "ERS") </br>
+
+#### Search Product
+
+![ERS](/images/user_search.png "ERS") </br>
+
+#### Loan Request
+
+![ERS](/images/user_loanreq.png "ERS") </br>
+
+#### Reserved Product
+
+![ERS](/images/user_cart.png "ERS") </br>
+
+#### Loan History
+
+![ERS](/images/user_loan.png "ERS") </br>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

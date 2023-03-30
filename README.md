@@ -16,9 +16,9 @@ Other features of the system will include a monthly report that'll show the user
 the most popular item, the number of times each item has been loaned and
 returned, and the total of items that have been landed and returned.</br>
 
-![Alt text](/posts/path/to/img.jpg "Optional title") </br>
+![ERS](/src/start/logo.png "ERS") </br>
 
-###The system must include the following features:
+### The system must include the following features:
 </br>
 ● Loan and return items, Tracking details of who has it.</br>
 ● Users can reserve items before loaning.</br>

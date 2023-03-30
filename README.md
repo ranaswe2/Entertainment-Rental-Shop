@@ -47,25 +47,31 @@ landed and returned</br>
 ![ERS](/images/1start.png "ERS") </br>
 
 ### User Panel
-</br>
+
 
 #### Sign Up
 </br>
-* Select a valid Image with extension JPG, JPEG or PNG formate
-* Provide a username with the combination of alphabets and numbers
+* Select a valid Image with extension JPG, JPEG or PNG formate</br>
+* Provide a username with the combination of alphabets and numbers</br>
 
 ![ERS](/images/user_signup1.png "ERS") </br>
 
-After clicking the Sign Up button, server check your information. If all are correct, then you will see a pop-up message 
+After clicking the Sign Up button, server check your information. If all are correct, then you will see a pop-up message </br>
 
 ![ERS](/images/user_signup2.png "ERS") </br>
 
 #### Log In
 
+Try to log in before approving the user account</br>
+![ERS](/images/user_login1.png "ERS") </br>
+
+Try to log in by an incorrect password </br>
 
 
-
-
+![ERS](/images/user_login2.png "ERS") </br>
+![ERS](/images/user_login3.png "ERS") </br>
+![ERS](/images/user_login4.png "ERS") </br>
+![ERS](/images/user_login5.png "ERS") </br>
 
 
 

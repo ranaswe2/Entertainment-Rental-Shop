@@ -14,26 +14,25 @@ Audiobooks) to be catalogued within the database. In addition to these, each
 item will have different options (for example, CDs will have their genre).
 Other features of the system will include a monthly report that'll show the user
 the most popular item, the number of times each item has been loaned and
-returned, and the total of items that have been landed and returned.
-The system must include the following features:
-● Loan and return items, Tracking details of who has it.
-● Users can reserve items before loaning.
-● Fine for overdue items with details
-● Charge for losing or missing an item.
-● Ability to select multiple types of items to be loaned at once.
-● More than one option for each of the items (for example, each item has a
-genre associated with it, if loaning a DVD it might be a horror film)
-● Shows item availability when loaning and the quantity.
+returned, and the total of items that have been landed and returned.</br>
+The system must include the following features:</br>
+● Loan and return items, Tracking details of who has it.</br>
+● Users can reserve items before loaning.</br>
+● Fine for overdue items with details</br>
+● Charge for losing or missing an item.</br>
+● Ability to select multiple types of items to be loaned at once.</br>
+● More than one option for each of the items </br>
+● Shows item availability when loaning and the quantity.</br>
 ● Option to print details about a single item onto a file that includes; item
 details, number of copies on loan and available, and the earliest return
-date
-● Search facility and inventory checking
+date</br>
+● Search facility and inventory checking</br>
 ● Login system with different users (standard and admin), with the ability
-to register new users with admin approval.
-● Option to log off once user us finished
+to register new users with admin approval.</br>
+● Option to log off once user us finished</br>
 ● Cataloguing ability to register new items, update items and delete items,
-within the shops database
+within the shops database</br>
 ● Monthly report page that will check most popular item, number of times
 each item has been loaned and returned, and total of items that have been
-landed and returned
+landed and returned</br>
 

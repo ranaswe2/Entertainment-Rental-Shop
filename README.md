@@ -43,10 +43,10 @@ landed and returned</br>
 ## Features with User Interface
 
 ![ERS](/images/0start.png "ERS") </br>
-
+# .
 ![ERS](/images/1start.png "ERS") </br>
 
-### User Panel
+## User Panel
 
 
 #### Sign Up
@@ -80,6 +80,9 @@ After trying 3 times with a wrong password, account is blocked  </br>
 
 #### Search Product
 
+* Select a category and enter search text
+* Click the product image to view product details
+* Click 'Take a loan' button
 ![ERS](/images/user_search.png "ERS") </br>
 
 #### Loan Request
@@ -94,22 +97,61 @@ After trying 3 times with a wrong password, account is blocked  </br>
 
 ![ERS](/images/user_loan.png "ERS") </br>
 
+#### Logout
+
+![ERS](/images/user_logout.png "ERS") </br>
+
+
+## User Panel
+
+#### Login
+
+![ERS](/images/admin_login.png "ERS") </br>
+
+#### Home
+
+![ERS](/images/admin_home.png "ERS") </br>
+Click the loan image for details </br>
+![ERS](/images/admin_home2.png "ERS") </br>
+ Enter User ID for checking borrower information </br>
+![ERS](/images/admin_home3.png "ERS") </br>
+Approve or remove after checking the information
+![ERS](/images/admin_home4.png "ERS") </br>
 
 
 
+#### User Request
+
+![ERS](/images/admin_userreq1.png "ERS") </br>
+
+![ERS](/images/admin_userreq2.png "ERS") </br>
 
 
 
+#### New Item
+
+![ERS](/images/admin_item1.png "ERS") </br>
+A pop-up message will appear on the screen after clocking the Add Item button </br>
+![ERS](/images/admin_item1.png "ERS") </br>
 
 
+#### New Product
+
+Existing Product List
+![ERS](/images/admin_product1.png "ERS") </br>
+Add a new Product
+![ERS](/images/admin_product2.png "ERS") </br>
+A pop-up message will appear on the screen after Successfully added the product
+![ERS](/images/admin_product3.png "ERS") </br>
+Click the New Product button for check the update list
+![ERS](/images/admin_product4.png "ERS") </br>
 
 
+#### Manage People
 
-
-
-
-
-
+* Update user and admin password </br>
+* Delete unusual user account </br>
+![ERS](/images/admin_product1.png "ERS") </br>
 
 
 

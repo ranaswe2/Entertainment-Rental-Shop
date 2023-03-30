@@ -1,4 +1,4 @@
-# Entertainment-Rental-Shop
+# Entertainment Rental Shop
 
 The system being developed, will be used for a rental store that allows
 employees to loan out items. These loaned items will then be returned to the
@@ -39,4 +39,44 @@ within the shops database</br>
 ● Monthly report page that will check most popular item, number of times
 each item has been loaned and returned, and total of items that have been
 landed and returned</br>
+
+## Features with User Interface
+
+![ERS](/images/0start.png "ERS") </br>
+
+![ERS](/images/1start.png "ERS") </br>
+
+### User Panel
+</br>
+
+#### Sign Up
+</br>
+* Select a valid Image with extension JPG, JPEG or PNG formate
+* Provide a username with the combination of alphabets and numbers
+
+![ERS](/images/user_signup1.png "ERS") </br>
+
+After clicking the Sign Up button, server check your information. If all are correct, then you will see a pop-up message 
+
+![ERS](/images/user_signup2.png "ERS") </br>
+
+#### Log In
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

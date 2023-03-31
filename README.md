@@ -40,6 +40,20 @@ within the shops database</br>
 each item has been loaned and returned, and total of items that have been
 landed and returned</br>
 
+![ERS](/images/requirements.png "ERS") </br>
+### Instructions
+I. Create a database named entertainment_rental_shop with user name root and empty password </br>
+    a. If you set password, then go to database package and then change the password field of MySQL.java class </br>
+
+II. Import the entertainment_rental_shop.sql file  </br>
+
+III. Import the project zip file in netbeans IDE by following path: </br>
+      File > Import Project > From ZIP > select the project  ZIP file from its location </br>
+
+IV. Run the project.  </br>
+     a. If it starts with showing a progressbar, then it’s okay. Because, our project Main Class is StartWindow.java which is in the start package. </br>
+     b. Else, go to src > start > StartWindow.java and run the file. </br>
+
 ## Features with User Interface
 
 ![ERS](/images/0start.png "ERS") </br>
@@ -56,7 +70,7 @@ landed and returned</br>
 
 ![ERS](/images/user_signup1.png "ERS") </br>
 
-After clicking the Sign Up button, server check your information. If all are correct, then you will see a pop-up message </br>
+After clicking the Sign Up button, system check your information. If all are correct, then you will see a pop-up message </br>
 
 ![ERS](/images/user_signup2.png "ERS") </br>
 
@@ -69,7 +83,9 @@ Try to log in with an incorrect password </br>
 
 
 ![ERS](/images/user_login2.png "ERS") </br>
+ </br>
 ![ERS](/images/user_login3.png "ERS") </br>
+ </br>              
 ![ERS](/images/user_login4.png "ERS") </br>
 After trying 3 times with a wrong password, account is blocked  </br>
 ![ERS](/images/user_login5.png "ERS") </br>
@@ -80,9 +96,10 @@ After trying 3 times with a wrong password, account is blocked  </br>
 
 #### Search Product
 
-* Select a category and enter search text
-* Click the product image to view product details
-* Click 'Take a loan' button
+* Select a category and enter search text</br>
+* Click the product image to view product details</br>
+* Click 'Take a loan' button for taking loan</br>
+* Click 'Add to Cart' to reserve the product for future loan</br>
 ![ERS](/images/user_search.png "ERS") </br>
 
 #### Loan Request
@@ -123,7 +140,7 @@ Approve or remove after checking the information
 #### User Request
 
 ![ERS](/images/admin_userreq1.png "ERS") </br>
-
+ </br>
 ![ERS](/images/admin_userreq2.png "ERS") </br>
 
 
@@ -147,11 +164,61 @@ Click the New Product button for check the update list
 ![ERS](/images/admin_product4.png "ERS") </br>
 
 
-#### Manage People
+#### Manage User
 
 * Update user and admin password </br>
 * Delete unusual user account </br>
 ![ERS](/images/admin_manageuser.png "ERS") </br>
+
+
+#### Manage Item
+
+Update Item Pricing </br>
+![ERS](/images/admin_manageitem2.png "ERS") </br>
+
+Remove Item from the Item List </br>
+![ERS](/images/admin_manageitem3.png "ERS") </br>
+ </br>
+![ERS](/images/admin_manageitem4.png "ERS") </br>
+
+
+#### Loan Summary
+
+![ERS](/images/admin_loan.png "ERS") </br>
+Receive Product from borrower </br>
+* Enter Loan Id </br>
+* Select payment Type </br>
+* Click check amount button </br>
+* Click the receive button </br>
+![ERS](/images/admin_loan2.png "ERS") </br>
+* A pop-up message will appear on the screen if the system receive this payment successfully </br>
+![ERS](/images/admin_loan2.png "ERS") </br>
+
+#### Monthly Report
+* Click 'Monthly Report' button to download report for current month </br>
+* Select a folder where you want to keep the report
+* Click save button
+![ERS](/images/admin_report3.png "ERS") </br>
+
+
+#### Item Report
+
+* Click 'Item Report' button to download report for a specific item </br>
+* Select an item </br>
+* Click download button  </br>
+* Select a folder where you want to keep the report </br>
+* Click save button </br>
+![ERS](/images/admin_report1.png "ERS") </br>
+![ERS](/images/admin_report2.png "ERS") </br>
+
+
+#### Logout
+
+![ERS](/images/admin_logout.png "ERS") </br>
+
+</br></br>
+
+*Thank You for Visiting this Repository*
 
 
 

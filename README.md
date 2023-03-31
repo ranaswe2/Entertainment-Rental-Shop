@@ -98,7 +98,7 @@ After trying 3 times with a wrong password, account is blocked  </br>
 #### Search Product
 
 * Select a category and enter search text</br>
-* Click the product image to view product details</br>
+* Click on the product image to view product details</br>
 * Click 'Take a loan' button for taking loan</br>
 * Click 'Add to Cart' to reserve the product for future loan</br>
 ![ERS](/images/user_search.png "ERS") </br>
@@ -129,7 +129,7 @@ After trying 3 times with a wrong password, account is blocked  </br>
 #### Home
 
 ![ERS](/images/admin_home.png "ERS") </br>
-Click the loan image for details </br>
+Click on the product image for detail information </br>
 ![ERS](/images/admin_home2.png "ERS") </br>
  Enter User ID for checking borrower information </br>
 ![ERS](/images/admin_home3.png "ERS") </br>

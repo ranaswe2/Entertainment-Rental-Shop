@@ -196,8 +196,8 @@ Receive Product from borrower </br>
 
 #### Monthly Report
 * Click 'Monthly Report' button to download report for current month </br>
-* Select a folder where you want to keep the report
-* Click save button
+* Select a folder where you want to keep the report</br>
+* Click save button</br>
 ![ERS](/images/admin_report3.png "ERS") </br>
 
 
@@ -209,6 +209,7 @@ Receive Product from borrower </br>
 * Select a folder where you want to keep the report </br>
 * Click save button </br>
 ![ERS](/images/admin_report1.png "ERS") </br>
+</br></br>
 ![ERS](/images/admin_report2.png "ERS") </br>
 
 

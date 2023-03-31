@@ -41,6 +41,7 @@ each item has been loaned and returned, and total of items that have been
 landed and returned</br>
 
 ![ERS](/images/requirements.png "ERS") </br>
+
 ### Instructions
 I. Create a database named entertainment_rental_shop with user name root and empty password </br>
     a. If you set password, then go to database package and then change the password field of MySQL.java class </br>

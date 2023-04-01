@@ -11,9 +11,12 @@ import java.sql.Statement;
 
 
 public class AdminLogin implements Login{
-    JFrame frame;
-    String username;
-    String password;
+    private static JFrame frame;
+    
+     private static int id;
+     private static String name;
+     private static String username;
+    private static String password;
 
     public AdminLogin(String username, String password,JFrame frame) {
         this.username = username;
@@ -31,6 +34,11 @@ public class AdminLogin implements Login{
             ResultSet resultSet = statement.executeQuery(sql);    // Execute the query
 
             if(resultSet.next()) {         // Process the result set
+                
+            id = resultSet.getInt("id");
+            name = resultSet.getString("name");
+                
+                
                 new Home();
                 frame.dispose();
             }
@@ -38,4 +46,19 @@ public class AdminLogin implements Login{
                 JOptionPane.showMessageDialog(null,"Enter Your Correct Username and Password! ");
             }
     }
+
+    public static int getId() {
+        return id;
+    }
+
+    public static String getName() {
+        return name;
+    }
+
+    public static String getUsername() {
+        return username;
+    }
+    
+    
+    
 }

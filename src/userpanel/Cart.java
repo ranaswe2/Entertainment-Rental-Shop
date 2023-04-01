@@ -31,12 +31,6 @@ public class Cart  extends User{
 
 /****************************************       Result        ************************************/
 
-                 JLabel resultLabel= new JLabel("Results");     // To be hidden before clicking search button
-                 resultLabel.setBounds(400,200,400,40);
-                 resultLabel.setFont(new Font("verdana", Font.BOLD, 40));
-                 resultLabel.setForeground(Color.GREEN);
-                 panel.add(resultLabel);
-                 
                  
                  JPanel resultPanel= new JPanel();
                  BoxLayout layout = new BoxLayout(resultPanel, BoxLayout.Y_AXIS);

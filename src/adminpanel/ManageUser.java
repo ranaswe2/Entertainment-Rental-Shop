@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.geom.Line2D;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import start.CombinedFrame;
 
 public class ManageUser extends Admin{
     public ManageUser() {
@@ -81,6 +82,25 @@ public class ManageUser extends Admin{
         });
 
 
+        JButton viewDetailsButton = new JButton("View Admin Details");
+        viewDetailsButton.setBounds(450, 750, 500,  40);
+        viewDetailsButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        viewDetailsButton.setFont(new Font("Serif", Font.BOLD, 24));
+        viewDetailsButton.setBackground(Color.ORANGE);
+
+        viewDetailsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new AdminDetailsWindow();
+            }
+        
+        });
+        
+        
+        
+        panel.add(viewDetailsButton);
+        
+        
 /*******************************   Delete & Lock Account   ********************************/
 
 
